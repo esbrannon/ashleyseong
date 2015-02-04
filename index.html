@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Ashley Seong's Art</title>
+
+	
+
+	<link href="simple.css" rel="stylesheet" type="text/css" />
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="./jmpress.js"></script>
+
+
+</head>
+<body>
+
+<div id="simple">
+	<div id="home" class="step" data-x="1800" data-y="0" data-scale="4" ></div> 
+
+	<div class="step">
+		<img src="./works/1_small.jpg" width="700">
+	</div>
+	<div class="step" data-x="900">
+		<img src="./works/1_small.jpg" width="700">
+	</div>
+	<div class="step" data-x="1800">
+		<img src="./works/1_small.jpg" width="700">
+	</div>
+	<div class="step" data-x="2700">
+		<img src="./works/1_small.jpg" width="700">
+	</div>
+	<div class="step" data-x="3600">
+		<img src="./works/1_small.jpg" width="700">
+	</div>
+	
+	<div class="step" data-y="900">
+		<img src="./works/1_small.jpg" width="700">
+	</div>
+	<div class="step" data-x="900" data-y="900">
+		<img src="./works/1_small.jpg" width="700">
+	</div>
+	<div class="step" data-x="1800" data-y="900">
+		<img src="./works/1_small.jpg" width="700">
+	</div>
+	<div class="step" data-x="2700" data-y="900">
+		<img src="./works/1_small.jpg" width="700">
+	</div>
+	<div class="step" data-x="3600" data-y="900">
+		<img src="./works/1_small.jpg" width="700">
+	</div>
+
+
+	<div class="step" data-y="1800">
+		<img src="./works/1_small.jpg" width="700">
+	</div>
+	<div class="step" data-x="900" data-y="1800">
+		<img src="./works/1_small.jpg" width="700">
+	</div>
+	<div class="step" data-x="1800" data-y="1800">
+		<img src="./works/1_small.jpg" width="700">
+	</div>
+	<div class="step" data-x="2700" data-y="1800">
+		<img src="./works/1_small.jpg" width="700">
+	</div>
+	<div class="step" data-x="3600" data-y="1800">
+		<img src="./works/1_small.jpg" width="700">
+	</div>
+
+
+</div>
+
+<div class="hint">
+    <p>Use arrow keys to navigate. Press 'h' to return to home.</p>
+</div>
+
+<script type="text/javascript">
+$("#simple").jmpress({
+    keyboard: {
+        keys: {
+            72: function() { // 'o' key for Overview
+
+                   $(this).jmpress("select", "#home");
+               }
+            }
+        }
+    
+});
+
+</script>
+
+
+</body>
+</html>
